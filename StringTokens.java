@@ -1,16 +1,18 @@
+//Given a string, split the string into tokens. Token is a one or more consecutive English alphabetic letters. 
+//Then, print the number of tokens, followed by each token on a new line.
+
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.*;
 public class StringTokens {
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the string");
         String s = scan.nextLine();
         // Write your code here.
-        ArrayList<String> arTokens = new ArrayList<String>();
-        String[] s1 = s.split(" ");
-
-
+        ArrayList<String> arTokens = new ArrayList<String>();  //creeating the Arraylist to store the tokens
+        String[] s1 = s.split(" "); //creating the array of words from string
         int result = 0;
         for(int i = 0; i < s1.length; i++)
         {
