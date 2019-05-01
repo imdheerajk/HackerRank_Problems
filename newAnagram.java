@@ -1,3 +1,5 @@
+//check if two strings are anagrams of each other or not
+
 import java.util.Scanner;
 
 public class newAnagram {
@@ -6,7 +8,7 @@ public class newAnagram {
         s1 = s1.toLowerCase();
         s2 = s2.toLowerCase();
 
-        if(s1.length() == s2.length())
+        if(s1.length() == s2.length()) //check length 
         {
             int a = 0;
             for(int i = 0; i< s1.length(); i++)
@@ -14,7 +16,7 @@ public class newAnagram {
                 int count1 = 0;
                 int count2 = 0;
                 char compareS1 = s1.charAt(i);
-                for(int j = 0; j < s1.length(); j++)
+                for(int j = 0; j < s1.length(); j++) 
                 {
                     if(compareS1 == s1.charAt(j)){
                         count1++;
@@ -25,7 +27,7 @@ public class newAnagram {
                 }
 
 
-                System.out.println(count1 + " " + count2) ;
+                //System.out.println(count1 + " " + count2) ;
                 if(count1 == count2) {
                     a++;
                 }
