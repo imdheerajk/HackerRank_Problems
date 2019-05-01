@@ -1,3 +1,5 @@
+//Using Recurssion to solve the tower of Hanoi problem
+//A,B,C are the towers
 
 import java.util.Scanner;
 
@@ -6,7 +8,7 @@ public class tower_of_hanoi {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of pebs");
+        System.out.println("Enter the number of pebs");  //how many units you want to move from start tower to end tower
         int n = sc.nextInt();
 
 
@@ -14,7 +16,7 @@ public class tower_of_hanoi {
 
     }
 
-    public static void tower_hanoi(int n, char ST, char AX, char ED)
+    public static void tower_hanoi(int n, char ST, char AX, char ED) //ST-start towr, AX- auxilary tower, ED- end tower
     {
         int count = 0;
         if(n >= 1)
