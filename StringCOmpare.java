@@ -1,3 +1,6 @@
+//Compare two strings if they have any common character or not. Strings can be upto length of 100,000 characters and 
+//maximum 10 pairs of strings can be entered for comparison
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -11,7 +14,10 @@ public class StringCOmpare {
     // Complete the twoStrings function below.
     static String twoStrings(String s1, String s2) {
 
-        Set<Character> hash_Set1 = new HashSet<>();
+        
+        //we will conevrt the strings into sets of characters so in this way we will have at max 26 characters
+        //Also using one for loop to fill the set reducing the complexity
+        Set<Character> hash_Set1 = new HashSet<>(); 
         Set<Character> hash_Set2 = new HashSet<>();
         if(s1.length() > s2.length())
         {
@@ -43,7 +49,7 @@ public class StringCOmpare {
             }
         }
 
-        if(Collections.disjoint(hash_Set1,hash_Set2))
+        if(Collections.disjoint(hash_Set1,hash_Set2)) //Retturns boolean if there is no common element
         {
             return "NO";
         }
