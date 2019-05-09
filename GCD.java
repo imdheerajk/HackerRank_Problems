@@ -1,3 +1,6 @@
+//Compute GCD of ttwo numbers using recurssion
+
+
 import java.util.Scanner;
 
 public class GCD {
